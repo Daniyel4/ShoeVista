@@ -10,8 +10,11 @@ const Home = () => {
       <GenInfo />
       <Brands />
       <div className="md:w-full md:max-w-full xs:mx-2  sm:mx-auto ">
+
+      /** Showing top brands under bestseller */
+
         <div className="prose prose-2xl">
-          <ShopBy title="Best Sellers" filter="bestSellers" />
+          <ShopBy title="Best Sellers" filter="topRated" />
         </div>
         <div className="child:ring-white">
           <ShopBy title="Top Rated" filter="topRated" />

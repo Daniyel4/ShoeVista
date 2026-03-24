@@ -2,6 +2,7 @@ import Products from "../models/productModel.js";
 
 //Get all products 
 export const getProducts = async (req, res) => {
+    
     try {
         const products = await Products.find();
         res.status(200).json(products);

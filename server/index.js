@@ -8,9 +8,13 @@ dotenv.config();
 
 const app = express();
 
+
 app.use(cors());
 
 app.use(express.json());
+
+// Connecting to the api
+app.use('/api', router);
 
 const PORT = process.env.PORT || 5000;
 
